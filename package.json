@@ -2,7 +2,15 @@
   "name": "grid-as-needed",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.0",
+    "@babel/preset-env": "^7.1.0"
+  },
   "dependencies": {
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"

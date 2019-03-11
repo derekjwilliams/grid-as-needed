@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import Grids from './components/grids'
+import store from './GridStore'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Grids store={store}></Grids>
       </div>
     );
   }
