@@ -9,6 +9,7 @@
     "@babel/preset-env": "^7.1.0"
   },
   "dependencies": {
+    "d3": "^5.9.1",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
     "react": "^16.8.4",

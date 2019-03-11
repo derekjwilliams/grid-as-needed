@@ -1,14 +1,23 @@
 import React, { Component } from 'react'
 import './App.css'
-import Grids from './components/grids'
-import store from './GridStore'
+import Grids from './components/Grids'
+export const GridContext = React.createContext();
 
 class App extends Component {
+  state = {
+    grids: [],
+    kind: "GRTS",
+    dimensions: {width: 960, height: 600},
+    attributes: {size: '10'}
+  }
   render() {
+    const { grids, kind, dimensions, attributes } = this.state;
     return (
+      <GridContext.Provider value = {{ grids, kind, dimensions, attributes}}>
       <div className="App">
-        <Grids store={store}></Grids>
+        <Grids></Grids>
       </div>
+      </GridContext.Provider>
     );
   }
 }
