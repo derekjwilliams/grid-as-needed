@@ -31,8 +31,8 @@ function Grids() {
        .attr('stroke', color)
        .attr('width', width)
        .attr('height', height)
-       .attr('x', '0px')
-       .attr('y', '0px')
+       .attr('x', '0')
+       .attr('y', '0')
        .attr('transform', 'translate(0,0)')
   }
   const draw = ({svg, width = 960, height = 600, size = 10}) => {
@@ -56,13 +56,4 @@ function Grids() {
   )
 }
 
-
 export default Grids
-/*    return (
-    <nav>
-      <div>
-        Grid here of type {kind}
-      </div>
-    </nav>
-  );
-*/
